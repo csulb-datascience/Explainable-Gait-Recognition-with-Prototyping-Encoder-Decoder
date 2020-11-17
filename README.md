@@ -28,5 +28,4 @@ You can download pretrained model here: ...
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
 Sella Bae sella.bae@student.csulb.edu <br/>
-Nhat Le nhat.le01@student.csulb.edu <br/>
 
