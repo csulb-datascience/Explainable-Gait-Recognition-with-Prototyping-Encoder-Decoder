@@ -1,5 +1,9 @@
-# Explainable-Gait-Recognition-with-Prototyping-Encoder-Decoder
-This repository is the official implementation of  Explainable-Gait-Recognition-with-Prototyping-Encoder-Decoder
+# Explainable Gait Recognition with Prototyping Encoder Decoder
+This repository is the official implementation of Explainable Gait Recognition with Prototyping Encoder–Decoder paper, which proposes a method to successfuly address the open set gait recognition problem.
+
+According to the paper, the code here implements a encoder-decoder network architecture that learns mapping from the input (the gait information consistent of unit steps) to a latent space. The network utilizes two types of loss functions. The first one is based on the triplet loss function and it enforces that the distances in a latent space of homogeneous input pairs are smaller than those of heterogeneous input pairs. The second loss function minimizes the difference between reconstructed inputs and their corresponding prototypes. 
+
+Also here is implemented the module that allows the analysis of which part of the input is relevant to the recognition performance by using explainable tools such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (https://pypi.org/project/innvestigate/)
 
 # Requirements
 To install requirements:
