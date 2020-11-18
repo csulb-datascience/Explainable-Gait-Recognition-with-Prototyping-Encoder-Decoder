@@ -32,16 +32,19 @@ We repeat our experiment 10 times...
 # Evaluation
 The system is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), and True Negative Rate (TNR) defined as follows:
 
-![equation one](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20ACC%20%3D%20%5Cfrac%7BTP%20&plus;%20TN%7D%7BTP%20&plus;%20FN%20&plus;%20TN%20&plus;%20FP%7D),
-![equation two](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20TPR%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D),
-![equation three](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20TNR%3D%20%5Cfrac%7BTN%7D%7BTN%20&plus;%20FP%7D)
+<table>
+  <tr>
+    <td>![equation one](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20ACC%20%3D%20%5Cfrac%7BTP%20&plus;%20TN%7D%7BTP%20&plus;%20FN%20&plus;%20TN%20&plus;%20FP%7D)</td>
+    <td>![equation two](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20TPR%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D)</td>
+    <td>![equation three](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20TNR%3D%20%5Cfrac%7BTN%7D%7BTN%20&plus;%20FP%7D)</td>
+  </tr>
+</table>
 
 Where, 
-- TP stands for True Positive and it is a unit step in the known test set that is recognized correctly. 
-- FN stands for False Negative and it is a unit step in the known test set that is recognized incorrectly. 
-- TN stands for True Negative and it is a unit step in the unknown test set that is recognized correctly as an unknown participant.
-- FP satnds for False Negative and it is a unit step in the unknown test set that is recognized incorrectly as a known participant.
-
+- TP stands for True Positive and it is a unit step in the known test set that is classified correctly. 
+- FN stands for False Negative and it is a unit step in the known test set that is classified incorrectly. 
+- TN stands for True Negative and it is a unit step in the unknown test set that is classified correctly as an unknown participant.
+- FP satnds for False Negative and it is a unit step in the unknown test set that is classified incorrectly as a known participant.
 
 # Pre-trained Model
 You can download pretrained model here: ...
