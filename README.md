@@ -13,15 +13,10 @@ pip install -r requirements.txt
 ```
 
 # Modules
-To train the models in the paper, run this command:
-```
-cd code
-python training.py
-```
-We repeat our experiment 10 times...
+...
 
 # Pre-trained Model
-You can download pretrained model here: ...
+...
 
 
 # Datasets
