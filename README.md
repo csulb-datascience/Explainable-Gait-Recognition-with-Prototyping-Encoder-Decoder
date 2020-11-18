@@ -13,11 +13,12 @@ pip install -r requirements.txt
 ```
 
 # Datasets
-As shown in the figure, the data was collected from 30 subjects. I was split into three sets: ![Datasets](images/split.png)
+As shown in the figure, the data was collected from 30 subjects and it was split into three sets: 
+![Datasets](images/split.png)
 
 - <b>Training set</b>: used to train the encoder-decoder network. It consists of all the unit steps of 16 individuals selected randomly.
-- Known-test set: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the 7 individuals and it is used to test the classifier.
-- Unknown test set: it contains all the unit steps of the remaining 7 subjects which were not used in any training process. It is used for testing the classifier as unknown data.
+- <b>Known-test set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the 7 individuals and it is used to test the classifier.
+- <b>Unknown test set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process. It is used for testing the classifier as unknown data.
 
 # Modules
 To train the models in the paper, run this command:
