@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 # Datasets
 As shown in the figure, the data was collected from 30 subjects and it was split into three sets: 
-![Datasets](images/split.png)
+
 <img src="images/split.png" width="70%" class="center">
 
 - <b>Training set</b>: used to train the encoder-decoder network. It consists of all the unit steps of 16 individuals selected randomly.
