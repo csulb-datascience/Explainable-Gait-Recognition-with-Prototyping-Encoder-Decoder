@@ -12,6 +12,18 @@ It is recommended to create a new environment and install the packages listed in
 pip install -r requirements.txt
 ```
 
+# Modules
+To train the models in the paper, run this command:
+```
+cd code
+python training.py
+```
+We repeat our experiment 10 times...
+
+# Pre-trained Model
+You can download pretrained model here: ...
+
+
 # Datasets
 As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
 
@@ -21,13 +33,6 @@ As is shown in the following image, the data was collected from 30 subjects and 
 - <b>Known-test set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the same 7 individuals and it is used to test the classifier as known data in the open set gait recognition problem.
 - <b>Unknown test set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process, therefore they are unknown subjects. It is used for testing the classifier as unknown data in the open set gait recognition problem.
 
-# Modules
-To train the models in the paper, run this command:
-```
-cd code
-python training.py
-```
-We repeat our experiment 10 times...
 
 # Evaluation
 The system is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), and True Negative Rate (TNR) defined as follows:
@@ -39,14 +44,10 @@ The system is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), an
 - ![equation three](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20TNR%3D%20%5Cfrac%7BTN%7D%7BTN%20&plus;%20FP%7D)
 
 Where, 
-- TP stands for True Positive and it is a unit step in the known test set that is classified correctly. 
-- FN stands for False Negative and it is a unit step in the known test set that is classified incorrectly. 
-- TN stands for True Negative and it is a unit step in the unknown test set that is classified correctly as an unknown participant.
-- FP satnds for False Negative and it is a unit step in the unknown test set that is classified incorrectly as a known participant.
-
-# Pre-trained Model
-You can download pretrained model here: ...
-
+- TP stands for True Positive and it is the total unit steps in the known test set that were classified correctly. 
+- FN stands for False Negative and it is the total unit steps in the known test set that were classified incorrectly. 
+- TN stands for True Negative and it is the total unit steps in the unknown test set that were classified correctly as an unknown participant.
+- FP satnds for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
 
 # Results
 Performance as function of lambda:
