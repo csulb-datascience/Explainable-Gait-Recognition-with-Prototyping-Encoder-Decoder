@@ -6,7 +6,7 @@ According to the paper, the code here implements a encoder-decoder network archi
 Also here is implemented the module that allows the analysis of which part of the input is relevant to the recognition performance by using explainable tools such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/)
 
 # Requirements
-The main packages used for this project are Tensorflow-gpu version 1.14, Keras 2.24, innvestigate 1.08, and scikit-learn 0.23.2.
+The main packages used for this project are Tensorflow-gpu 1.14, Keras 2.2.4, innvestigate 1.08, and scikit-learn 0.23.2.
 It is recommended to create a new environment and install the packages listed in requirements.txt:
 ```
 pip install -r requirements.txt
