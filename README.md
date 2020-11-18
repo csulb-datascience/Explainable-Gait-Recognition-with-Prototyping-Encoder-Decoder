@@ -22,9 +22,7 @@ pip install -r requirements.txt
 # Datasets
 As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
 
-<center>
-<img src="images/split.png" width="70%" align="middle">
-</center>
+<img src="images/split.png" width="70%">
 
 - <b>Training set</b>: used to train the encoder-decoder network. It consists of all the unit steps of 16 individuals selected randomly.
 - <b>Known-test set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the same 7 individuals and it is used to test the classifier as known data in the open set gait recognition problem.
@@ -48,9 +46,9 @@ Where,
 
 # Results
 
-The following countour plots show the obtained distributions of ACC for the different lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader yellow area which means the prototype loss for that lambda contributes to get a most robust system with weaker dependency respect to gamma and nu. 
+The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader yellow area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
 
-<img src="images/acc-lambda-v.png" width="70%" align="middle">
+<img src="images/acc-lambda-v.png" width="70%">
 
 
 # Contributors
