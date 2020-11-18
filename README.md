@@ -50,6 +50,9 @@ The following countour plots show the obtained distributions of ACC for the resp
 
 <img src="images/acc-lambda-v.png" width="70%">
 
+The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.06 for lambda=1.0. The plot below shows that TPR and ACC get considerably enhanced at tau smaller than 0. Therefore, it is recommended to choose an alternative tau instead of tau=0.0 for the decision boundary in the latent space.
+
+<img src="images/tau.png" width="70%">
 
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
