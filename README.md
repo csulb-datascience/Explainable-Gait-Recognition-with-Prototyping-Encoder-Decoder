@@ -54,6 +54,13 @@ The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.0
 
 <img src="images/tau.png" width="50%">
 
+# Results for Common Attribution Map
+
+<img src="images/sa.png" width="50%">
+<img src="images/lrp.png" width="50%">
+
+
+
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
 Sella Bae sella.bae@student.csulb.edu <br/>
