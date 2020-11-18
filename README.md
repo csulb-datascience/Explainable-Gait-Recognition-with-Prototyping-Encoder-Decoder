@@ -42,7 +42,7 @@ Where,
 - TP stands for True Positive and it is the total unit steps in the known test set that were classified correctly. 
 - FN stands for False Negative and it is the total unit steps in the known test set that were classified incorrectly. 
 - TN stands for True Negative and it is the total unit steps in the unknown test set that were classified correctly as an unknown participant.
-- FP satnds for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
+- FP stands for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
 
 # Results
 
