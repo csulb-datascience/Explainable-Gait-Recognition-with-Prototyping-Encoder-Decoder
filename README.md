@@ -44,7 +44,7 @@ Where,
 - TN stands for True Negative and it is the total unit steps in the unknown test set that were classified correctly as an unknown participant.
 - FP stands for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
 
-# Results
+# Results for Gait Recognition
 
 The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader brighter area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
 
