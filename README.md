@@ -29,7 +29,11 @@ You can download pretrained model here: ...
 
 
 # Results
-..
+Performance as function of lambda:
+![Lambda](images/acc-lambda-v.png)
+
+
+
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
 Sella Bae sella.bae@student.csulb.edu <br/>
