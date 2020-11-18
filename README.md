@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 # Datasets
-As shown in the figure, the data was collected from 30 subjects and it was split into three sets: 
+As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
 
 <img src="images/split.png" width="70%" class="center">
 
