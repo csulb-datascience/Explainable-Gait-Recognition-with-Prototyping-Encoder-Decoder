@@ -21,9 +21,9 @@ pip install -r requirements.txt
 
 # Datasets
 As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
-
+<p class="aligncenter">
 <img src="images/split.png" width="70%" class="center">
-
+</p>
 - <b>Training set</b>: used to train the encoder-decoder network. It consists of all the unit steps of 16 individuals selected randomly.
 - <b>Known-test set</b>: it contains the unit steps of 7 individuals selected randomly from the 14 remaining people after selecting the training set. This dataset is divided in two subsets. The first subset consists of 10 unit steps for each individual and it is used for training the OSVM classifier. The second subset is the remaining steps of the same 7 individuals and it is used to test the classifier as known data in the open set gait recognition problem.
 - <b>Unknown test set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process, therefore they are unknown subjects. It is used for testing the classifier as unknown data in the open set gait recognition problem.
@@ -45,9 +45,11 @@ Where,
 - FP satnds for False Negative and it is the total unit steps in the unknown test set that were classified incorrectly as a known participant.
 
 # Results
-Performance as function of lambda:
-![Lambda](images/acc-lambda-v.png)
 
+The following figure shows the distributions of ACC as a function of hyper-parameters gamma and nu for the different lambda values.
+
+Performance as function of lambda:
+<img src="images/acc-lambda-v.png" width="70%" class="center">
 
 
 # Contributors
