@@ -56,7 +56,7 @@ The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.0
 
 # Results for Common Attribution Map
 
-The following plots show the performance as a function of occluding relevant positions from higher to lower (O1,...,O5) for SA and LRP-e with fixed gamma=2.2, nu=0.06, tau=-0.1, and lambda=1.0.It is observable  the overall performance degradation for both methods in terms of TPR and ACC as we move backwards from occlusion of lower relevant positions (O5) to higher ones (O1).This implies that both SA and LRP-e can detect the most important unit step regions (O1) for the known~test set.
+The following plots show the performance as a function of occluding relevant positions from higher to lower (O1,...,O5) for SA and LRP-e with fixed gamma=2.2, nu=0.06, tau=-0.1, and lambda=1.0. It is observable  the overall performance degradation for both methods in terms of TPR and ACC as we move backwards from occlusion of lower relevant positions (O5) to higher ones (O1).This implies that both SA and LRP-e can detect the most important unit step regions (O1) for the known~test set.
 
 <img src="images/sa.png" width="50%">
 <img src="images/lrp.png" width="50%">
