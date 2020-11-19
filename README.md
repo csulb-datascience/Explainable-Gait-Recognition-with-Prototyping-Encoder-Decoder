@@ -29,8 +29,8 @@ As is shown in the following image, the data was collected from 30 subjects and 
 - <b>Unknown test set</b>: it contains all the unit steps of the remaining 7 subjects which were not used in any training process, therefore they are unknown subjects. It is used for testing the classifier as unknown data in the open set gait recognition problem.
 
 
-# Evaluation of Gait Recognition
-The recognition is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), and True Negative Rate (TNR) defined as follows:
+# Evaluation
+The system is evaluated in terms of Accuracy (ACC), True Positive Rate (TPR), and True Negative Rate (TNR) defined as follows:
 
 - ![equation one](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cdpi%7B100%7D%20%5Csmall%20ACC%20%3D%20%5Cfrac%7BTP%20&plus;%20TN%7D%7BTP%20&plus;%20FN%20&plus;%20TN%20&plus;%20FP%7D)
 
@@ -55,6 +55,8 @@ The effect of different values of tau is depicted by fixing gamma=2.2 and nu=0.0
 <img src="images/tau.png" width="50%">
 
 # Results for Common Attribution Map
+
+The following plots show the performance as a function of occluding relevant positions from higher to lower (O1,...,O5) for SA and LRP-e with fixed gamma=2.2, nu=0.06, tau=-0.1, and lambda=1.0.It is observable  the overall performance degradation for both methods in terms of TPR and ACC as we move backwards from occlusion of lower relevant positions (O5) to higher ones (O1).This implies that both SA and LRP-e can detect the most important unit step regions (O1) for the known~test set.
 
 <img src="images/sa.png" width="50%">
 <img src="images/lrp.png" width="50%">
