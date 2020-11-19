@@ -46,7 +46,7 @@ Where,
 
 # Results for Gait Recognition
 
-The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader brighter area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
+The following countour plots show the obtained distributions of ACC for the respective displayed lambda values as a function of the hyper-parameters gamma and nu for a fixed tau=-0.1, where the brighter yellow areas indicate rates greater than 90%. By comparing the plots, lambda=1.0 presents the broader brighter area which means the prototype loss for that lambda contributed to get a most robust system with weaker dependency respect to gamma and nu. 
 
 <img src="images/acc-lambda-v.png" width="70%">
 
