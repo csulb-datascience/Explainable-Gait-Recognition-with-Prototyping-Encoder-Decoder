@@ -7,6 +7,7 @@ The resultant encoder from the previous process is used to predict the embedding
 
 Also, it is implemented the analysis with Attribution map methods such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/). It allows to identify the parts of the input that are relevant to the recognition performance (see process 3 in next sections).
 
+
 # Requirements
 Some of the main packages used for this project are Tensorflow-gpu 1.14, Keras 2.2.4, innvestigate 1.08, and scikit-learn 0.23.2.
 It is recommended to create a new environment and install the packages listed in requirements.txt:
@@ -21,8 +22,9 @@ The implementation is divided in different processes whose scripts are in the fo
 - <b>2. Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-test and unknown test sets. It requires the predicted embeddings obtained when training the encoder-decoder. The results are saved in a CSV file for later plot and analysis. <i>Script: 2_train-test_osvm.py</i>
 - <b>3. Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. The results are saved in a CSV file for later plot and analysis.<i>Script: 3_train-test_osvm_attribution_map.py</i>
 
+
 # Pre-trained Model
-...
+A pretrained model resultant from process 1 can be downloaded here: 
 
 
 # Datasets
