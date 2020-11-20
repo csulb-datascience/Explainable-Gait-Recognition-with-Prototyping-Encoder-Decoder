@@ -1,9 +1,11 @@
 # Explainable Gait Recognition with Prototyping Encoder Decoder
 This repository is the official implementation of Explainable Gait Recognition with Prototyping Encoder–Decoder paper, which proposes a method to successfuly address the open set gait recognition problem.
 
-The code here implements an encoder-decoder network architecture that learns mapping from the input (the gait information consistent of unit steps) to a latent space. The network utilizes two types of loss functions. The first one is based on the triplet loss function and it enforces that the distances in a latent space of homogeneous input pairs are smaller than those of heterogeneous input pairs. The second loss function minimizes the difference between reconstructed inputs and their corresponding prototypes. 
+The code here implements an encoder-decoder network architecture that learns mapping from the input (the gait information consistent of unit steps) to a latent space (embeddings). The network utilizes two types of loss functions. The first one is based on the triplet loss function and it enforces that the distances in a latent space of homogeneous input pairs are smaller than those of heterogeneous input pairs. The second loss function minimizes the difference between reconstructed inputs and their corresponding prototypes. Only the encoder will be used in following processes after training (see process 1 in next sections).
 
-Also here is implemented the module that allows the analysis of which part of the input is relevant to the recognition performance by using explainable tools such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/)
+The resultant encoder from the previous process is used to predict the embedding vectors to train one-class support vector machine (OSVM) classifiers which are used to classify the unit steps. The classifiers are thereby capable of identifying whether a unit step belongs to any of the known classes (see process 2 in next sections).
+
+Also, it is implemented the analysis with Attribution map methods such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/). It allows to identify the parts of the input that are relevant to the recognition performance (see process 3 in next sections).
 
 # Requirements
 Some of the main packages used for this project are Tensorflow-gpu 1.14, Keras 2.2.4, innvestigate 1.08, and scikit-learn 0.23.2.
@@ -15,9 +17,9 @@ pip install -r requirements.txt
 # Processes
 The implementation is divided in different processes whose scripts are in the folder "processes" of this repository:
 
-- <b>Train encoder-decoder</b>: it trains the encoder-decoder model. It saves the trained encoder and the predicted embeddings for later processes. <i>Script: 1_train_encoder-decoder.py</i>
-- <b>Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-test and unknown test sets. It requires the predicted embeddings obtained when training the encoder-decoder. The results are saved in a CSV file for later plot and analysis. <i>Script: 2_train-test_osvm.py</i>
-- <b>Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. <i>Script: 3_train-test_osvm_attribution_map.py</i>
+- <b>1. Train encoder-decoder</b>: it trains the encoder-decoder model. It saves the trained encoder and the predicted embeddings for later processes. <i>Script: 1_train_encoder-decoder.py</i>
+- <b>2. Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-test and unknown test sets. It requires the predicted embeddings obtained when training the encoder-decoder. The results are saved in a CSV file for later plot and analysis. <i>Script: 2_train-test_osvm.py</i>
+- <b>3. Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. <i>Script: 3_train-test_osvm_attribution_map.py</i>
 
 # Pre-trained Model
 ...
