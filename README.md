@@ -24,7 +24,7 @@ The implementation is divided in different processes whose scripts are in the fo
 
 
 # Pre-trained Model
-A pretrained model resultant from process 1 can be downloaded here: 
+A pretrained model resultant from the train encoder-decoder process can be downloaded here: 
 
 
 # Datasets
