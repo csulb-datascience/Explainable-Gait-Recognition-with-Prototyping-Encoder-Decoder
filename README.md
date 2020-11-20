@@ -17,7 +17,7 @@ The implementation is divided in different processes whose scripts are in the fo
 
 - <b>Train encoder-decoder</b>: it trains the encoder-decoder model. It saves the trained encoder and the predicted embeddings for later processes. Script: 1_train_encoder-decoder.py
 - <b>Train and test the classifier</b>: it trains the OSVM classifier with the few-shot learning method and test it with known-test and unknown test sets. It requires the predicted embeddings obtained when training the encoder-decoder. The results are saved in a CSV file for later plot and analysis. Script: 2_train-test_osvm.py
-- <b>Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. Script: train-test_osvm_attribution_map.py
+- <b>Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. Script: 3_train-test_osvm_attribution_map.py
 
 # Pre-trained Model
 ...
