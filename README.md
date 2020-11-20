@@ -3,7 +3,7 @@ This repository is the official implementation of Explainable Gait Recognition w
 
 The code here implements an encoder-decoder network architecture that learns mapping from the input (the gait information consistent of unit steps) to a latent space (embeddings). The network utilizes two types of loss functions. The first one is based on the triplet loss function and it enforces that the distances in a latent space of homogeneous input pairs are smaller than those of heterogeneous input pairs. The second loss function minimizes the difference between reconstructed inputs and their corresponding prototypes. Only the encoder will be used in following processes after training (see process 1 in next sections).
 
-The resultant encoder from the previous process is used to predict the embedding vectors to train one-class support vector machine (OSVM) classifiers which are used to classify the unit steps. The classifiers are thereby capable of identifying whether a unit step belongs to any of the known classes (see process 2 in next sections).
+The resultant encoder from the previous process is used to predict the embedding vectors to train one-class support vector machine (OSVM) classifiers which are used to classify the unit steps. The classifiers are thereby capable of identifying whether a unit step belongs or not to any of the known classes (see process 2 in next sections).
 
 Also, it is implemented the analysis with Attribution map methods such as sensitivity analysis (SA) and layer-wise relevance propagation (LRP) which are available at the iNNvestigate toolbox (pypi.org/project/innvestigate/). It allows to identify the parts of the input that are relevant to the recognition performance (see process 3 in next sections).
 
