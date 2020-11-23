@@ -8,7 +8,9 @@
 #   Encoder:     "encoder_iter_" + iteration + "_lambda_" + lambda value + ".h5" 
 #   Embeddings:  "embeddings_iter_" + iteration + "_lambda_" + lambda value + ".npy" 
 #
-#
+#  Authors:
+#   Yong-Min Shin < jordan3414@yonsei.ac.kr>
+#   Jin-Duk Park < jindeok6@yonsei.ac.kr>
 # Date: Nov 2020
 #
 # Include a reference to this site if you will use this code.
