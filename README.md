@@ -23,11 +23,6 @@ The implementation is divided in different processes whose scripts are in the fo
 - <b>3. XAI attribution maps generation</b>: it generates the attribution maps for the SA and LRP methods  (<i>Script: 3_XAI_attribution_maps.py</i>).
 - <b>4. Train and test the classifier with attribution maps</b>: it trains the OSVM classifier with the few-shot learning method, but test it with embeddings obtained from occluded inputs of known-test and unknown test sets. The results are saved in a CSV file for later plot and analysis (<i>Script: 3_train-test_osvm_attribution_map.py</i>).
 
-
-# Pre-trained Model
-A pretrained model resultant from the train encoder-decoder process can be downloaded here: 
-
-
 # Datasets
 As is shown in the following image, the data was collected from 30 subjects and it was split into three sets: 
 
