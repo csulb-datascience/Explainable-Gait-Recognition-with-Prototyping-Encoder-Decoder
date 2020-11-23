@@ -75,4 +75,6 @@ The following plots show the performance as a function of occluding relevant pos
 # Contributors
 Nelson Minaya nelson.minaya@student.csulb.edu <br/>
 Sella Bae sella.bae@student.csulb.edu <br/>
+Yong-Min Shin jordan3414@yonsei.ac.kr <br/>
+Jin-Duk Park jindeok6@yonsei.ac.kr<br/>
 
